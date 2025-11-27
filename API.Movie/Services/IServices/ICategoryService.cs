@@ -8,9 +8,9 @@ namespace API.Movie.Services.IServices
         Task<ICollection<CategoryDto>> GetCategoriesAsync();
         Task<CategoryDto> GetCategoryAsync(int id);
 
-        Task<CategoryDto> CreateCategoryAsync(CategoryCreateDto catergoryDto);
+        Task<CategoryDto> CreateCategoryAsync(CategoryCreateUpdateDto catergoryDto);
 
-        Task<CategoryDto> UpdateCategoryAsync(int id, Category categoryDto);
+        Task<CategoryDto> UpdateCategoryAsync(CategoryCreateUpdateDto dto, int id);
 
         Task<bool> CategoryExistsByIdAsync(int id);
 
