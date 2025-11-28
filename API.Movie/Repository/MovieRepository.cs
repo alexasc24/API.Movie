@@ -12,7 +12,7 @@ namespace API.Movies.Repository
         {
             _context = context; 
         }
-        public async Task<bool> CreateMovieAsync(DAL.Models.Movie movie)
+        public async Task<bool> CreateMovieAsync(Movie movie)
         {
             movie.CreatedDate = DateTime.UtcNow;
             await _context.Movies.AddAsync(movie);
@@ -30,14 +30,14 @@ namespace API.Movies.Repository
             return await SaveAsync();
         }
 
-        public async Task<DAL.Models.Movie> GetMovieAsync(int id)
+        public async Task<Movie> GetMovieAsync(int id)
         {
             return await _context.Movies
                 .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public async Task<ICollection<DAL.Models.Movie>> GetMoviesAsync()
+        public async Task<ICollection<Movie>> GetMoviesAsync()
         {
             return await _context.Movies
                 .AsNoTracking()
@@ -45,7 +45,7 @@ namespace API.Movies.Repository
                 .ToListAsync();
         }
 
-        public async Task<bool> UpdateMovieAsync(DAL.Models.Movie movie)
+        public async Task<bool> UpdateMovieAsync(Movie movie)
         {
             movie.ModifiedDate = DateTime.UtcNow;
             _context.Movies.Update(movie);
