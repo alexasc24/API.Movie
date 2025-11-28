@@ -1,8 +1,8 @@
-﻿using API.Movie.DAL.Models;
-using API.Movie.DAL.Models.Dtos;
+﻿using API.Movies.DAL.Models;
+using API.Movies.DAL.Models.Dtos;
 using AutoMapper;
 
-namespace API.Movie.MoviesMapper
+namespace API.Movies.MoviesMapper
 {
     public class Mappers : Profile
     {

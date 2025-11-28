@@ -1,10 +1,10 @@
-﻿using API.Movie.DAL.Models.Dtos;
-using API.Movie.Services.IServices;
+﻿using API.Movies.DAL.Models.Dtos;
+using API.Movies.Services.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 
-namespace API.Movie.Controllers
+namespace API.Movies.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

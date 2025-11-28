@@ -1,9 +1,9 @@
-using API.Movie.DAL;
-using API.Movie.MoviesMapper;
-using API.Movie.Repository;
-using API.Movie.Repository.IRepository;
-using API.Movie.Services;
-using API.Movie.Services.IServices;
+using API.Movies.DAL;
+using API.Movies.MoviesMapper;
+using API.Movies.Repository;
+using API.Movies.Repository.IRepository;
+using API.Movies.Services;
+using API.Movies.Services.IServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

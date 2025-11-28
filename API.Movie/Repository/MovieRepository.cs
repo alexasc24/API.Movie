@@ -1,9 +1,9 @@
-﻿using API.Movie.DAL;
-using API.Movie.DAL.Models;
-using API.Movie.Repository.IRepository;
+﻿using API.Movies.DAL;
+using API.Movies.DAL.Models;
+using API.Movies.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Movie.Repository
+namespace API.Movies.Repository
 {
     public class MovieRepository : IMovieRepository
     {

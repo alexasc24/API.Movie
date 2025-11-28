@@ -1,6 +1,6 @@
-﻿using API.Movie.DAL.Models;
+﻿using API.Movies.DAL.Models;
 
-namespace API.Movie.Repository.IRepository
+namespace API.Movies.Repository.IRepository
 {
     public interface ICategoryRepository
     {

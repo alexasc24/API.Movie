@@ -1,7 +1,7 @@
-﻿using API.Movie.DAL.Models;
+﻿using API.Movies.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Movie.DAL
+namespace API.Movies.DAL
 {
     public class ApplicationDbContext : DbContext
     {

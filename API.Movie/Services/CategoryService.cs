@@ -1,10 +1,10 @@
-﻿using API.Movie.DAL.Models;
-using API.Movie.DAL.Models.Dtos;
-using API.Movie.Repository.IRepository;
-using API.Movie.Services.IServices;
+﻿using API.Movies.DAL.Models;
+using API.Movies.DAL.Models.Dtos;
+using API.Movies.Repository.IRepository;
+using API.Movies.Services.IServices;
 using AutoMapper;
 
-namespace API.Movie.Services
+namespace API.Movies.Services
 {
     public class CategoryService : ICategoryService
     {

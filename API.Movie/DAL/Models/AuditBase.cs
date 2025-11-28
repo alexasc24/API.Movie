@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace API.Movie.DAL.Models
+namespace API.Movies.DAL.Models
 {
     public class AuditBase
     {

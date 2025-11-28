@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace API.Movie.Migrations
+namespace API.Movies.Migrations
 {
     /// <inheritdoc />
     public partial class NullModifiedDateColunm : Migration
