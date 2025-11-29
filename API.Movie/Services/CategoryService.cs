@@ -56,7 +56,7 @@ namespace API.Movies.Services
             var categoryDeleted = await _categoryRepository.DeleteCategoryAsync(id);
             if (!categoryDeleted)
             {
-                throw new Exception("Ocurrió un error al eliminar la categorpia.");
+                throw new Exception("Ocurrió un error al eliminar la categoría.");
             }
             return categoryDeleted;
 
