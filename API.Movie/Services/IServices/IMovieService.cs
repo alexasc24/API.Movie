@@ -13,6 +13,10 @@ namespace API.Movies.Services.IServices
 
         Task<MovieDto> UpdateMovieAsync(MovieCreateUpdateDto dto, int id);
 
+        Task<bool> MovieExistsByIdAsync(int id);
+
+        Task<bool> MovieExistsByNameAsync(string name);
+
         Task<bool> DeleteMovieAsync(int id);
     }
 }

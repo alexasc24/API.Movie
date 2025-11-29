@@ -17,6 +17,16 @@ namespace API.Movies.Services
             _mapper = mapper;
         }
 
+        public Task<bool> MovieExistsByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> MovieExistsByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<MovieDto> CreateMovieAsync(MovieCreateUpdateDto movieCreateDto)
         {
             var movieExists = await _movieRepository.MovieExistsByNameAsync(movieCreateDto.Name);
