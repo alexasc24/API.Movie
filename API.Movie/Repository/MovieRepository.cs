@@ -45,6 +45,20 @@ namespace API.Movies.Repository
                 .ToListAsync();
         }
 
+        public async Task<bool> MovieExistsByIdAsync(int id)
+        {
+            return await _context.Movies
+               .AsNoTracking()
+               .AnyAsync(m => m.Id == id);
+        }
+
+        public async Task<bool> MovieExistsByNameAsync(string name)
+        {
+            return await _context.Movies
+              .AsNoTracking()
+              .AnyAsync(c => c.Name == name);
+        }
+
         public async Task<bool> UpdateMovieAsync(Movie movie)
         {
             movie.ModifiedDate = DateTime.UtcNow;
