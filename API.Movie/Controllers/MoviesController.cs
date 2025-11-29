@@ -24,9 +24,23 @@ namespace API.Movies.Controllers
 
         public async Task<ActionResult<ICollection<MovieDto>>> GetMoviesAsync()
         {
-            var movies = await _movieService.GetMoviesAsync();
-            return Ok(movies);
+            var moviesDto = await _movieService.GetMoviesAsync();
+            return Ok(moviesDto);
         }
+
+        [HttpGet("{id:int}", Name = "GetMovieAsync")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+
+        public async Task<ActionResult<MovieDto>> GetMovieAsync(int id)
+        {
+            var movieDto = await _movieService.GetMovieAsync(id);
+            return Ok(movieDto);
+        }
+
+
 
     }
 }
