@@ -26,7 +26,7 @@ namespace API.Movies.Services
             throw new NotImplementedException();
         }
 
-        public Task<Movie> GetMovieAsync(int id)
+        public Task<MovieDto> GetMovieAsync(int id)
         {
             throw new NotImplementedException();
         }
